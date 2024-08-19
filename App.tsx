@@ -1,13 +1,16 @@
 import React from 'react';
-import {Text} from './src/components/Text';
+import {View} from 'react-native';
+import {Text} from './src/components/Text/Text';
 import {SafeAreaView} from 'react-native';
+import {Button} from './src/components/Button/Button';
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaView>
-      <Text preset="headingMedium">Teste</Text>
-      <Text preset="paragraphLarge">Teste</Text>
-      <Text preset="headingLarge">Teste</Text>
+      <View style={{paddingHorizontal: 24}}>
+        <Text preset="headingMedium">Teste</Text>
+        <Button title='Entrar'/>
+      </View>
     </SafeAreaView>
   );
 }
